@@ -1,0 +1,6 @@
+#SQL Error Log Parsing
+
+##TODO
+> Use powershell to parse the errorlog and upload it into the database
+> Tables need to be created to stage the errorlog contents
+> better to keep it in a separate schema
