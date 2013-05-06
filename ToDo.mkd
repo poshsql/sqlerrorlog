@@ -1,0 +1,13 @@
+#What are we trying to do
+1. ReadErrorLog periodically into database
+2. Parse Errorlog by trashing the trival entries
+3. Send Mail
+
+
+##How to Read Errorlog
+1. Create table to dump the logs. I can think of three tables SERVER, LOGMaster, LOGS
+2. SERVER will hold the configuration for path of the dump directory for each SERVER
+3. LOGMASTER will hold the every log files read and modifieddatetime
+4. LOGMASTER will alos hold the ServerID as the FK to first table
+5. LOGS will hold each entry read by the error logs
+6. LOGS will be having the key of LOGMASTER for identity of entry belong to which file
