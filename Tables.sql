@@ -22,7 +22,7 @@ CREATE TABLE ERRORLOG.LOGS (
     LOGID INT,
     LogDate	 DATETIME,
     ProcessInfo	VARCHAR(20),
-    Text	 VARCHAR(500)
+    Text	 VARCHAR(MAX)
 )
 GO
 INSERT INTO ERRORLOG.SERVERS VALUES ('PS01SQL02','D:\Work\projects\Programming\Powershell\SQLErrorLog\log\', NULL)
